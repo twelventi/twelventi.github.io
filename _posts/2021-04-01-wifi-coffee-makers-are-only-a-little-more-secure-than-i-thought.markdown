@@ -10,7 +10,9 @@ author: David Bono
 #       name: Example File
 ---
 
-Coming off our recent [Hacking a Coffee Maker Event](/events/2021/03/22/hacking-a-coffee-maker.html/), I wanted to write up a blog post with more technical information about what we did. So here's kind of a summary of what I discovered about the coffee makers, and if you came to the event, what was actually going on when we were sending messages to our CaaS (Coffee as a Service) server.
+*This is a repost article originally posted on [fordhamcss.org](https://fordhamcss.org/blog/2021/03/31/wifi-coffee-makers-are-only-a-little-more-secure-than-I-thought.html). I wrote and posted it in both places but I figured I'd also keep it here for historical purposes*
+
+Coming off our recent [Hacking a Coffee Maker Event](https://fordhamcss.org/events/2021/03/22/hacking-a-coffee-maker.html/), I wanted to write up a blog post with more technical information about what we did. So here's kind of a summary of what I discovered about the coffee makers, and if you came to the event, what was actually going on when we were sending messages to our CaaS (Coffee as a Service) server.
 
 # TLDR;
 
