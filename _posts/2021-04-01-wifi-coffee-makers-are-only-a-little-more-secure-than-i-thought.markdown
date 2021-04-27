@@ -197,3 +197,11 @@ At this point, I stopped trying to reverse the coffee maker, because I had enoug
 In conclusion, there is a replay attack vulnerability that allows you to successfully turn on one of these coffee makers from python while the coffee maker is on a network. However, they have some security features that limit its scope to the messages that were sent to and from one specific coffee maker to a phone. There's definitely more that can be researched and if I were to continue researching this, I would sniff many more diverse phone-to-coffee maker conversations (such as a lengthy keep-alive sequence, and selecting "brew" at different points in the conversation to see how the checksums differ, etc) and further attempt to reverse engineer the binary protocol so that I could craft my own coffee maker packets. 
 
 This was pretty much how the event worked (aside from exposing the coffee makers to the public internet so people who were remote at the event possibly could have recreated this behavior....). Thanks to all who came to the event, and I hope you were able to learn something about embedded devices!
+
+
+
+newlines go <br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
