@@ -4,7 +4,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.7.1 -->
 <title>Adventures in WSL | twelventi</title>
-<meta name="generator" content="Jekyll v3.8.6" />
+<meta name="generator" content="Jekyll v3.9.0" />
 <meta property="og:title" content="Adventures in WSL" />
 <meta name="author" content="David Bono" />
 <meta property="og:locale" content="en_US" />
@@ -18,7 +18,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Adventures in WSL" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/jekyll/update/2021/05/08/adventures-in-wsl.html"},"@type":"BlogPosting","url":"http://localhost:4000/jekyll/update/2021/05/08/adventures-in-wsl.html","author":{"@type":"Person","name":"David Bono"},"headline":"Adventures in WSL","dateModified":"2021-05-08T01:00:00-04:00","datePublished":"2021-05-08T01:00:00-04:00","description":"Recently for absolutely no reason, with no change by me (right, that’s how all these issues occur), I could no longer run vscode from WSL by going to the folder I wanted to open in code in a wsl terminal and typing code . I would get this error: user@computer:/mnt/c/Users/user$ code . -bash: /mnt/c/Users/user/AppData/Local/Programs/Microsoft VS Code/bin/code: Permission denied After trying to comprehend some of the microsoft docs TLDR; Go edit /etc/wsl.conf and ensure the option for fmask is set to something like: 011, my wsl.conf file for reference: [automount] options = &quot;metadata,uid=1000,gid=1000,umask=22,fmask=011&quot;","@context":"https://schema.org"}</script>
+{"datePublished":"2021-05-08T01:00:00-04:00","@type":"BlogPosting","url":"http://localhost:4000/jekyll/update/2021/05/08/adventures-in-wsl.html","dateModified":"2021-05-08T01:00:00-04:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/jekyll/update/2021/05/08/adventures-in-wsl.html"},"author":{"@type":"Person","name":"David Bono"},"description":"Recently for absolutely no reason, with no change by me (right, that’s how all these issues occur), I could no longer run vscode from WSL by going to the folder I wanted to open in code in a wsl terminal and typing code . I would get this error: user@computer:/mnt/c/Users/user$ code . -bash: /mnt/c/Users/user/AppData/Local/Programs/Microsoft VS Code/bin/code: Permission denied After trying to comprehend some of the microsoft docs TLDR; Go edit /etc/wsl.conf and ensure the option for fmask is set to something like: 011, my wsl.conf file for reference: [automount] options = &quot;metadata,uid=1000,gid=1000,umask=22,fmask=011&quot;","headline":"Adventures in WSL","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="twelventi" /></head>
 <body><header class="site-header" role="banner">
@@ -48,7 +48,7 @@
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
-    <p>Recently for absolutely no reason, with no change by me (right, that’s how all these issues occur), I could no longer run vscode from WSL by going to the folder I wanted to open in code in a wsl terminal and typing <code class="highlighter-rouge">code .</code></p>
+    <p>Recently for absolutely no reason, with no change by me (right, that’s how all these issues occur), I could no longer run vscode from WSL by going to the folder I wanted to open in code in a wsl terminal and typing <code class="language-plaintext highlighter-rouge">code .</code></p>
 
 <p>I would get this error:</p>
 
@@ -60,9 +60,9 @@
 
 <h2 id="tldr">TLDR;</h2>
 
-<p>Go edit <code class="highlighter-rouge">/etc/wsl.conf</code> and ensure the option for <code class="highlighter-rouge">fmask</code> is set to something like: <code class="highlighter-rouge">011</code>, my wsl.conf file for reference:</p>
+<p>Go edit <code class="language-plaintext highlighter-rouge">/etc/wsl.conf</code> and ensure the option for <code class="language-plaintext highlighter-rouge">fmask</code> is set to something like: <code class="language-plaintext highlighter-rouge">011</code>, my wsl.conf file for reference:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[automount]
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[automount]
 options = "metadata,uid=1000,gid=1000,umask=22,fmask=011"
 </code></pre></div></div>
 
