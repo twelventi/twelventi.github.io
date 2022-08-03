@@ -9,6 +9,8 @@ source "https://rubygems.org"
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
 gem "jekyll", "~> 3.9.0"
+gem 'pathname', '0.2.0' #Oh this is a fun one.... Jekyll apparently was using pathname 0.1.0, 
+#but bundler was using 0.2.0 solution found here: https://github.com/jekyll/jekyll/issues/8860#issuecomment-964588318
 
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 #gem "minima" #, "~> 3.0"
@@ -32,3 +34,5 @@ end
 # Performance-booster for watching directories on Windows
 gem "wdm", "~> 0.1.0", :install_if => Gem.win_platform?
 
+
+gem "webrick", "~> 1.7"
