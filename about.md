@@ -13,11 +13,7 @@ This website is my personal technical blog and resume site. Hopefully I have som
 
 `$ whoami`
 
-My name is David. If you are here because this is linked from a job application, you already know my last name, so I will omit that here. My favorite languages are Python, C++, and Italian. 
-
-I currently am back working at Scalzo Property Management as the IT Specialist; essentially I am the resident nerd, the person to disseminate everything related to computers. 
-
-As of writing this I am currently the Research Director for the [Fordham Computer Science Society](https://fordhamcss.org), but I'll be handing over this position in about two weeks, after I officially graduate. If you're looking at this site and thinking "hmm this style looks awfully familiar", I may or may not have learned how to make a github pages site with Jekyll and Minima by inheriting the club website when I took over this position. I may be planning on making a more ~unique~ theme  to minima, but that's on the bottom of the TODO list. 
+My name is David. If you are here because this is linked from a job application, you already know my last name, so I will omit that here. My favorite languages are Typescript/Javascript, C++, and Italian. 
 
 My previous experience includes the following:
 
